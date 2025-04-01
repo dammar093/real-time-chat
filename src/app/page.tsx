@@ -6,5 +6,5 @@ export default function Home() {
   const isAuthenticated = true;
   if (isAuthenticated) router.replace("/home");
   else router.replace("/login");
-  return null;
+  return <h1>sdfhjsdk</h1>;
 }

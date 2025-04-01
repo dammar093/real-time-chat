@@ -1,7 +1,6 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 const DeskTopSideBar = () => {
   return (
@@ -30,7 +29,7 @@ const DeskTopSideBar = () => {
             </div>
           </div>
           <hr />
-          <div className="flex flex-col gap-3 items-center h-[15%]">
+          <div className="flex items-center h-[15%]">
             <Link href={""} className="w-full flex gap-2 items-center">
               <Avatar className="w-10 h-10 rounded-full">
                 <AvatarImage
@@ -41,7 +40,6 @@ const DeskTopSideBar = () => {
               </Avatar>
               <span className="font-semibold">Dammar</span>
             </Link>
-            <Button className="w-full cursor-pointer">Logout</Button>
           </div>
         </div>
       </div>

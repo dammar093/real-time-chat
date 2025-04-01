@@ -1,8 +1,6 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-import { Button } from "./ui/button";
-
 const MobileBar = () => {
   return (
     <div className="w-full h-screen flex gap-10 md:hidden">
@@ -10,7 +8,7 @@ const MobileBar = () => {
         <div className="w-full h-full flex flex-col justify-btween gap-1">
           <div className="w-full h-[85%] overflow-y-scroll flex flex-col gap-1 py-2 scroll-smooth">
             <Link
-              href={"/"}
+              href={"/home/1"}
               className="w-full flex gap-2 items-center p-2 rounded-md cursor-pointer"
             >
               <Avatar>
@@ -33,7 +31,7 @@ const MobileBar = () => {
             </Link>
           </div>
           <hr />
-          <div className="flex flex-col gap-3  h-[12%]">
+          <div className="flex  h-[12%]">
             <Link href={""} className="w-full flex gap-2 items-center">
               <Avatar className="w-10 h-10 rounded-full">
                 <AvatarImage
@@ -44,7 +42,6 @@ const MobileBar = () => {
               </Avatar>
               <span className="font-semibold">Dammar</span>
             </Link>
-            <Button className="w-fit cursor-pointer">Logout</Button>
           </div>
         </div>
       </div>

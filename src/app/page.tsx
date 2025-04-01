@@ -1,5 +1,10 @@
-import Image from "next/image";
+"use client";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  return <>ssfs</>;
+  const router = useRouter();
+  const isAuthenticated = true;
+  if (isAuthenticated) router.replace("/home");
+  else router.replace("/login");
+  return null;
 }

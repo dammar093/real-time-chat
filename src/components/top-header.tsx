@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 const TopHeader = () => {
   return (
     <div className="h-[10%] shadow-md w-full">
-      <div className="w-full flex gap-2   p-2 rounded-md">
+      <div className="w-full flex gap-2  p-2 rounded-md">
         <Avatar>
           <AvatarImage
             className="w-full h-full object-cover"
